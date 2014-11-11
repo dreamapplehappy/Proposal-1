@@ -34,7 +34,7 @@ return array(
 			'password'  => '',
 			'key'       => '',
 			'keyphrase' => '',
-			'root'      => '',
+			'root'      => '/var/www',
 		),
 
 	),
