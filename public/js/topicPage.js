@@ -16,7 +16,7 @@ $(document).ready(function(){
           type:"POST",
           data: $data,
           url:$url,
-          success:function(data){$flag = changeIcon($flag);changeNum(data);},
+          success:function(data){$flag = changeIcon($flag);changeNum(data);changePro();},
           error:function(){return location.href='/Proposal-1/public/login'}
         });
     });
@@ -49,4 +49,10 @@ function changeIcon(flag){
 function changeNum(data){
    $num = $('#vote-count');
    $num.text(data.count);
+}
+function() changePro{
+		$like = parseInt($("#vote-count").text()) * 4;
+		$(".progress-bar").text($like+"%");
+		$like += '%';
+		$(".progress-bar").css({"width": $like});
 }
