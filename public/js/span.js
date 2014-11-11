@@ -1,8 +1,8 @@
 $(function(){
-	$(".form-control").click(function(){
-		$(this).parent(".form-group").children(".span").show();
+	/*$(".form-control").click(function(){
+		$(this).parent(".form-group").children(".span-hidden").show();
 	});
-	$("span.span").click(function(){
+	$("span.span-hidden").click(function(){
 		$(this).hide();
 	});
 
@@ -16,5 +16,5 @@ $(function(){
 		}
 		var deadline = date+" "+time+":00";
 		$("#deadline").val(deadline);
-	});
+	});*/
 });

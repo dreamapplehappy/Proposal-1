@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'proposal',
-			'username'  => 'mengma',
-			'password'  => 'mengma',
+			'database'  => 'suggestty',
+			'username'  => 'root',
+			'password'  => 'dreamapple',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
