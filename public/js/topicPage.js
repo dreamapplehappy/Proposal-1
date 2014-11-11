@@ -50,3 +50,9 @@ function changeNum(data){
    $num = $('#vote-count');
    $num.text(data.count);
 }
+/*function() changePro{
+		$like = parseInt($("#vote-count").text()) * 4;
+		$(".progress-bar").text($like+"%");
+		$like += '%';
+		$(".progress-bar").css({"width": $like});
+}*/

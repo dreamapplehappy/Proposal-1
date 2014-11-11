@@ -40,10 +40,16 @@ navbar{
   font-size: 30px;
 } 
 
+<<<<<<< HEAD
 /* .navbar-collapse{
   position: absolute;
   right: 0px;
 } */
+=======
+ul.navbar-right{
+  float: right;
+}
+>>>>>>> 9a5f5e945ea020245998c0457ca0ed07ee54ef8d
 
 .navbar-nav>li>a{
   font-size: 20px;
