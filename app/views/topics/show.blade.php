@@ -17,7 +17,7 @@
 <div class="col-md-8 col-md-offset-1">
 <div class="panel panel-info">
     <div class="panel-heading">
-        {{ $topic->title }}
+        {{{ $topic->title }}}
     </div>
     <!-- <div>进度条</div> -->
       <div class="progress">
