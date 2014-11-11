@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     $('#vote').click(function(e){
         e.preventDefault();
-        var $url = '/vote';
+        var $url = '/Proposal-1/public/vote';
         var $data = {
         'user_id' : $(this).data('user'),
         'topic_id' : $(this).data('topic')
@@ -17,7 +17,7 @@ $(document).ready(function(){
           data: $data,
           url:$url,
           success:function(data){$flag = changeIcon($flag);changeNum(data);},
-          error:function(){return location.href='/login'}
+          error:function(){return location.href='/Proposal-1/public/login'}
         });
     });
 
