@@ -89,8 +89,8 @@ class TopicController extends \BaseController {
 	public function update($id)
 	{
 		$topic = Topic::findOrFail($id);
-        $data = Input::only('title', 'body');
-        $validator = Validator::make($data, Topic::$rules);
+        		$data = Input::only('title', 'body','deadline','importance');
+        		$validator = Validator::make($data, Topic::$rules);
         if($validator->fails()){
             return Redirect::back()->withErrors($validator)->withInput();
         }

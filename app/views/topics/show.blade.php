@@ -17,7 +17,7 @@
 <div class="col-md-8 col-md-offset-1">
 <div class="panel panel-info">
     <div class="panel-heading">
-        {{ $topic->title }}
+        {{{ $topic->title }}}
     </div>
     <!-- <div>进度条</div> -->
       <div class="progress">
@@ -26,7 +26,7 @@
           </div>
       </div>
   <div class="panel-body">
-      {{ $topic->body }}
+      {{{$topic->body }}}
   </div>
   <div class="panel-footer clearfix">
       @if(Auth::id() == $topic->user_id)

@@ -19,7 +19,7 @@
     <div href="#" class="list-group-item">
         <div class="imp">{{$topic->importance}}</div>
         <div class="badge">{{ $topic->vote_count }} <i class="icon-like size-20"></i></div>
-        <a href="{{ route('topic.show',$topic->id) }}" class="list-group-item-heading">{{ $topic->title }}<span class="glyphicon glyphicon-fire"></span></a>
+        <a href="{{ route('topic.show',$topic->id) }}" class="list-group-item-heading">{{{$topic->title }}}<span class="glyphicon glyphicon-fire"></span></a>
         <div class="list-group-item-text">{{ $topic->user->name }}在{{ date('Y-m-d', strtotime($topic->updated_at)) }}发表提议，投票的截止日期是：{{$topic->deadline}}</div>
     </div>
     </section> 
@@ -48,7 +48,7 @@
     <div href="#" class="list-group-item">
         <div class="imp">{{$topic->importance}}</div>
         <div class="badge">{{ $topic->vote_count }} <i class="icon-like size-20"></i></div>
-        <a href="{{ route('topic.show',$topic->id) }}" class="list-group-item-heading">{{ $topic->title }}<span class="glyphicon glyphicon-fire"></span></a>
+        <a href="{{ route('topic.show',$topic->id) }}" class="list-group-item-heading">{{{$topic->title }}}<span class="glyphicon glyphicon-fire"></span></a>
         <div class="list-group-item-text">{{ $topic->user->name }}在{{ date('Y-m-d', strtotime($topic->updated_at)) }}发表提议，投票的截止日期是：</div>
     </div>
     </section> 

@@ -8,7 +8,7 @@ class Topic extends Eloquent {
         'title' => 'required|unique:topics',
         'body'  => 'required',
         'deadline' => 'required|date',
-        'importance' => 'required|digits_between:1,5'
+        'importance' => 'required|digits_between:0,3'
     );
 
 
